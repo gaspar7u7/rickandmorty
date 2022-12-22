@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #260985, #440454);
+  font-family: 'Gloria Hallelujah', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header img {
+  width: 100%;
+}
+
+.input {
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.input input {
+  height: 40px;
+  font-size: 16px;
+  width: 365px;
+  background-color: #252525;
+  color: #cbde5d;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  padding-left: 40px;
+  border: solid #cbde5d;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.input button {
+  margin-left: 20px;
+  height: 50px;
+  width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  color: #12b0c9;
+  background-color: #cbde5d;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 16px;
+  border: solid #12b0c9 2px;
+  cursor: pointer;
+}
+
+.location {
+  background-color: #252525;
+  color: #12b0c9;
+  border: solid #cbde5d;
+  border-radius: 10px;
+  width: 80%;
+  -webkit-text-stroke: 0.5px #cbde5d;
+  color: #12b0c9;
+  margin-bottom: 20px;
+  margin-top: -70px;
+  font-family: 'Gloria Hallelujah', sans-serif;
+}
+
+.location h2 {
+  margin-left: 0px;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  margin-right: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.containerdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.25s;
+}
+
+.card1 {
+  background-color: #ffffff;
+  border: solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0px;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  max-width: 25%;
+  min-width: 300px;
+  transition: all 0.25s;
+}
+
+
+.card1 img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+
+.card1 h2 {
+  text-align: end;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.card1 p {
+  text-align: start;
+  margin-left: 0px !important;
+  margin: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.status {
+  background-color: #ffa500;
+  color: #fff;
+  margin-left: 0;
+  margin-right: 85px;
+  border-radius: 0 10px 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .list {
+    flex-direction: column;
+  }
+
+  .list li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .input {
+    flex-direction: column;
+  }
+
+  .input input {
+    width: 100%;
+  }
+}
